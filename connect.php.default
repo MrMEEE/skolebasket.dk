@@ -1,0 +1,19 @@
+<?php
+
+
+/* Database config */
+
+$db_host		= 'localhost';
+$db_user		= 'root';
+$db_pass		= 'pass';
+$db_database		= 'database'; 
+
+/* End config */
+
+
+$link = @mysqli_connect($db_host,$db_user,$db_pass) or die('Unable to establish a DB connection');
+
+mysqli_set_charset($link,'utf8');
+mysqli_select_db($link,$db_database);
+
+?>
