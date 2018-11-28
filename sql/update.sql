@@ -1,0 +1,1 @@
+ALTER TABLE `players` ADD `extracoach` INT NOT NULL AFTER `girls`; 
